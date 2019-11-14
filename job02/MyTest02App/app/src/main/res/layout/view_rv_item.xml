@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="400dp"
+    android:layout_marginRight="24dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@android:drawable/ic_lock_silent_mode_off"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/md_light_blue_800_color_code"
+        android:layout_below="@id/iv_icon">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="歌星名字"
+            android:textColor="@color/md_white_color_code"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

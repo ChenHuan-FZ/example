@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#86000000"
+    android:id="@+id/record_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/record_menu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_start_record"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/ar_start_record"
+            android:textSize="16dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_stop_record"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/ar_stop_record"
+            android:textSize="16dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_play_record"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/ar_play_record"
+            android:textSize="16dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_record_audio"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+        <com.evideostb.training.chenhuan.mediaplayer.audiorecorder_demo.LineWaveVoiceView
+            android:id="@+id/horvoiceview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:voiceLineColor="@color/horvoice_text_color"
+            app:voiceTextColor="@color/color_666666"
+            app:voiceTextSize="14dp"
+            app:voiceLineWidth="3dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_recording"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ar_record_audio_btn_selector"/>
+        <!--<Button-->
+            <!--android:id="@+id/btn_record"-->
+            <!--android:text="@string/ar_start_record"-->
+            <!--android:layout_above="@+id/iv_recording"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textColor="#ff9c00"-->
+            <!--android:textSize="16dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

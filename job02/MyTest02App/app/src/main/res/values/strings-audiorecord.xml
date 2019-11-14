@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ar_play_record">播放录音</string>
+    <string name="ar_start_record">开始录音</string>
+    <string name="ar_stop_record">停止录音</string>
+
+</resources>

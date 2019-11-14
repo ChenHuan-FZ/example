@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:orientation="vertical"
+    tools:context="com.evideostb.training.chenhuan.mytest01activity">
+    <EditText
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:background="@drawable/edit_bg"
+        android:text="http://testmiguadmin.kbar.evideocloud.com.cn/Admin/AdvertPlans/Preview?advert-screen-id=1"
+        />
+    <!-- 串口名 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textserialname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/serialname" />
+        <EditText
+            android:id="@+id/editserialname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/edit_bg"
+            android:text="http://testmiguadmin.kbar.evideocloud.com.cn/Admin/AdvertPlans/Preview?id=9"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/baudrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/baudrate" />
+        <Spinner
+            android:id="@+id/spinnerbaudrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/baundratearray"
+            />
+        <TextView
+            android:id="@+id/databit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/databit" />
+        <Spinner
+            android:id="@+id/spinnerdatabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/databitarray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    <TextView
+            android:id="@+id/stopbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/stopbit" />
+        <Spinner
+            android:id="@+id/spinnerstopbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/stopbitarray"
+            />
+        <TextView
+            android:id="@+id/paritybit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/paritybit" />
+        <Spinner
+            android:id="@+id/spinnerparitybit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/paritybitarray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/runlistening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/startlistent" />
+
+        <Button
+            android:id="@+id/stoplistening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stoplistent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/serialvaluetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/recvMsgTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lines="3"
+        android:scrollbars="vertical"
+        android:textSize="24sp"
+        android:background="@drawable/edit_bg"
+        android:singleLine="false"
+        />
+</LinearLayout>

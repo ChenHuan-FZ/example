@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mytest01service</string>
+    <string name="serialname">串口名:</string>
+    <string name="baudrate">波特率:</string>
+    <string name="databit">数据位:</string>
+    <string name="stopbit">停止位:</string>
+    <string name="paritybit">校验位:</string>
+    <string name="serialvaluetext">已累计接收</string>
+    <string name="startlistent">开始监听</string>
+    <string name="stoplistent">结束监听</string>
+</resources>

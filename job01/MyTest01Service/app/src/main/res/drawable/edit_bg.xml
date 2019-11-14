@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 声明xml命名空间。xmlns意思为“xml namespace”.冒号后面是给这个引用起的别名。
+schemas是xml文档的两种约束文件其中的一种，规定了xml中有哪些元素(标签)、元素有哪些属性及各元素的关系，
+当然从面向对象的角度理解schemas文件可以认为它是被约束的xml文档的“类”或称为“模板”。
+早期或简单的xml用的是另一种约束，称为DTD，这东西大家天天都见到。html/xhtml中都存在(早期的html可能没有)，
+如"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"。
+现在大部分xml文档的约束都换成schema了，原因是schema本身也是xml，二schema扩展性强。-->
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid
+                android:color="#FFFFFF"/>
+            <corners
+                android:radius="3dip"
+                />
+            <stroke
+                android:width="0.5px"
+                android:color="#505050"/>
+        </shape>
+    </item>
+</layer-list>
